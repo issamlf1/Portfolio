@@ -407,10 +407,7 @@ header .header-bg .intro-img img{
 .contact .head-contact-section h2{
     margin-bottom: 23px;
 }
-.contact .head-contact-section p{
 
-   
-}
 .contact .contact-sections{
     /* border: 5px dashed #FFF; */
     margin: 15px 15px;
@@ -427,6 +424,7 @@ header .header-bg .intro-img img{
     border-radius: 20px;
     background-color: #4D525D;
     margin-right: 15px;
+    margin-bottom: 10px;
     overflow: hidden;
     
 }
@@ -451,11 +449,14 @@ header .header-bg .intro-img img{
 }
 .contact .contact-sections button.copied-email{
     border: none;
-    background-color:  #fff;
+    background-color: #fff;
     border-radius: 50%;
     height: 43px;
     width: 43px;
     transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact .contact-sections button.copied-email:hover{
     color: #fff;
