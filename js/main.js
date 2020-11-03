@@ -65,15 +65,6 @@ $(function () {
   
    
    
-    
-    // Links Add Active Class
-    
-    $('.links li a').click(function () {
-       
-        $(this).parent().addClass('active').siblings().removeClass('active');
-        
-    });
-
     $('button.copied-email').on('click',function () {
         var copyText = document.getElementById("myInput");
         copyText.select();
