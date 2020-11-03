@@ -23,7 +23,7 @@ $(function () {
         }, 1500);
     });
     $(window).scroll(function () {
-        
+        var scroll = $(window).scrollTop();
         var test = $('.header-bg').offset().top + $('.header-bg').innerHeight() ;
         if (scroll > test) {
             $('.scroll-top').fadeIn(500);
