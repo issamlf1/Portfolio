@@ -17,19 +17,18 @@
 
 <body>
     <!-- header -->
-    <div class="progress"></div>
-    <header>
-        <div class="navbar .navbar-toggler .navbar-expand-md">
-            <div class="container">
-                <div class="brand">
-                    <h2>LANFOUF</h2>
-                </div>
-                <div class="btn-menu open">
-                    <i class="fas fa-bars fa-fw fa-2x"></i>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a data-scrolling="projects" href="#">Projets</a></li>
+    <div class="progress" role="presentation"></div>
+    <header role="banner">
+        <div class="container">
+            <div class="brand">
+                <h2>LANFOUF</h2>
+            </div>
+            <button class="btn-menu open" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">
+                <i class="fas fa-bars fa-fw fa-2x" aria-hidden="true"></i>
+            </button>
+            <nav id="main-menu" role="navigation">
+                <ul>
+                    <li><a data-scrolling="projects" href="#">Projets</a></li>
                         <li><a data-scrolling="experiences" href="#">Expériences</a></li>
                         <li><a data-scrolling="formations" href="#">Formations</a></li>
                         <li><a data-scrolling="certificats" href="#">Certificats</a></li>
@@ -39,32 +38,32 @@
                 </nav>
             </div>
         </div>
-        <div class="header-bg">
+        <section class="header-bg" aria-labelledby="intro-heading">
             <div class="container">
                 <div class="intro">
-                    <h2>bonjour,</h2>
+                    <h2 id="intro-heading">bonjour,</h2>
                     <h3 style="color: #E5E5E5;
                     font-size: 30px;">Je suis</h3>
                     <h1>ISSAM L'ANFOUF</h1>
                     <h3 style="margin-bottom: 35px;color: #E5E5E5;
                     font-size: 30px;">Élève ingénieur en informatique</h3>
-                    <a href="documents/CV Issam LANFOUF.pdf">Mon CV <i class="fas fa-download"></i></a>
+                    <a href="documents/CV Issam LANFOUF.pdf">Mon CV <i class="fas fa-download" aria-hidden="true"></i></a>
                 </div>
                 <div class="intro-img">
-                    <img src="images/image-bg.png">
+                    <img src="images/image-bg.png" alt="Illustration of Issam L'ANFOUF working on a laptop">
                 </div>
             </div>
-        </div>
+        </section>
     </header>
-    <div class="projects">
+    <section class="projects" aria-labelledby="projects-heading">
         <div class="container">
-            <h2 class="css-header">Projects</h2>
+            <h2 class="css-header" id="projects-heading">Projects</h2>
 
             <div class="row d-flex">
                 <div class="col-12 col-sm-6 col-md-4 mb-5">
-                    <div class="card" style="width: 100%;height: 100%;">
+                    <article class="card" style="width: 100%;height: 100%;">
                         <div class="container__img">
-                            <img src="images/cfunding.jpg" class="card-img-top" alt="">
+                            <img src="images/cfunding.jpg" class="card-img-top" alt="CFUNDING project screenshot">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">CFUNDING</h5>
@@ -72,53 +71,53 @@
                                 plateforme web qui permet aux porteurs de projet de collecter des fonds pour une
                                 initiative personnelle ou professionnelle.
                             </p>
-                            <a href="https://github.com/issamlf1/CFunding"><i
-                                    class="fab fa-github-alt fa-fw"></i></a>
+                            <a href="https://github.com/issamlf1/CFunding" aria-label="CFUNDING on GitHub"><i
+                                    class="fab fa-github-alt fa-fw" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 mb-5">
-                    <div class="card" style="width: 100%;height: 100%;">
+                    <article class="card" style="width: 100%;height: 100%;">
                         <div class="container__img">
-                            <img src="images/graphe.png" class="card-img-top" alt="">
+                            <img src="images/graphe.png" class="card-img-top" alt="GraphTheory project screenshot">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">GraphTheory</h5>
                             <p class="card-text">application Desktop qui permet d'appliquer les algorithmes de la
                                 théorie des graphes (BFS, DFS, Dijkstra, Bellman-Ford…).</p>
-                            <a href="https://github.com/issamlf1/GraphTheory-Desktop"><i
-                                    class="fab fa-github-alt fa-fw"></i></a>
+                            <a href="https://github.com/issamlf1/GraphTheory-Desktop" aria-label="GraphTheory on GitHub"><i
+                                    class="fab fa-github-alt fa-fw" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-12 col-sm-6 mb-5 col-md-4">
-                    <div class="card" style="width: 100%; height: 100%;">
+                    <article class="card" style="width: 100%; height: 100%;">
                         <div class="container__img">
-                            <img src="images/covid.jpg" class="card-img-top img-fluid" alt="">
+                            <img src="images/covid.jpg" class="card-img-top img-fluid" alt="CORONASTAT project screenshot">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">CORONASTAT</h5>
                             <p class="card-text">Application web d’analyse de la propagation de covid-19.</p>
-                            <a href="https://github.com/issamlf1/CORONASTAT"><i
-                                    class="fab fa-github-alt fa-fw"></i></a>
+                            <a href="https://github.com/issamlf1/CORONASTAT" aria-label="CORONASTAT on GitHub"><i
+                                    class="fab fa-github-alt fa-fw" aria-hidden="true"></i></a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="container__button">
-                <a  class="discover-btn" href="https://github.com/issamlf1?tab=repositories">plus de projets <i class="fas fa-chevron-right fa-fw"></i></a>
+                <a class="discover-btn" href="https://github.com/issamlf1?tab=repositories">plus de projets <i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i></a>
             </div>
         </div>
-    </div>
-    <div class="experiences">
+    </section>
+    <section class="experiences" aria-labelledby="experiences-heading">
         <div class="container">
-            <h2 class="css-header">Expériences</h2>
+            <h2 class="css-header" id="experiences-heading">Expériences</h2>
             <div class="experience-cont">
-                <div class="experience">
+                <article class="experience">
                     <div class="year">
-                        <p >De juillet 2020 à septembre 2020</p>
+                        <p>De juillet 2020 à septembre 2020</p>
                     </div>
-                    <div class="icon-e"></div>
+                    <div class="icon-e" aria-hidden="true"></div>
                     <div class="ex-todo">
                         <p class="timeline">De juillet 2020 à septembre 2020</p>
                         <h4>Institut des neurosciences et de coaching</h4>
@@ -132,12 +131,12 @@
                         </ul>
                         </p>
                     </div>
-                </div>
-                <div class="experience">
+                </article>
+                <article class="experience">
                     <div class="year">
                         <p>De juillet 2019 à septembre 2019</p>
                     </div>
-                    <div class="icon-e"></div>
+                    <div class="icon-e" aria-hidden="true"></div>
                     <div class="ex-todo">
                         <p class="timeline">De juillet 2019 à septembre 2019</p>
                         <h4>Amendis</h4>
@@ -151,76 +150,76 @@
                         </ul>
                         </p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="formations">
+    <section class="formations" aria-labelledby="formations-heading">
         <div class="container">
-            <h2 class="css-header">Formations</h2>
+            <h2 class="css-header" id="formations-heading">Formations</h2>
             <div class="formation-cont">
-                <div class="formation formation1" >
+                <article class="formation formation1" >
                     <div class="year">
                         <p>Depuis 2018</p>
                     </div>
-                    <div class="icon-e"></div>
+                    <div class="icon-e" aria-hidden="true"></div>
                     <div class="fr-todo">
                         <p class="timeline">Depuis 2018</p>
                         <h4>Élève ingénieur en Logiciels et Systèmes Intelligents</h4>
                         <h6>Faculté des sciences et techniques de Tanger</h6>
     
                     </div>
-                </div>
-                <div class="formation formation2">
+                </article>
+                <article class="formation formation2">
                     <div class="year">
                         <p>De septembre 2016 à juillet 2018</p>
                     </div>
-                    <div class="icon-e"></div>
+                    <div class="icon-e" aria-hidden="true"></div>
                     <div class="fr-todo">
                         <p class="timeline">De septembre 2016 à juillet 2018</p>
                         <h4>DEUST : Mathématique – Informatique - physique - chimie</h4>
                         <h6>Faculté des sciences et techniques de Tanger</h6>
                     </div>
-                </div>
-                <div class="formation formation3">
+                </article>
+                <article class="formation formation3">
                     <div class="year">
                         <p>De septembre 2015 à juin 2016</p>
                     </div>
-                    <div class="icon-e"></div>
+                    <div class="icon-e" aria-hidden="true"></div>
                     <div class="fr-todo">
                         <p class="timeline">De septembre 2015 à juin 2016</p>
                         <h4>Baccalauréat : Sciences physiques </h4>
                         <h6>Lycée Ibn Battouta, Tanger</h6>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
-    </div>
-    <div class="certificats">
+    </section>
+    <section class="certificats" aria-labelledby="certificates-heading">
         <div class="container">
-            <h2 class="css-header">Certificats</h2>
+            <h2 class="css-header" id="certificates-heading">Certificats</h2>
             <div class="certificat-content">
-                <div class="cert-box">
-                    <img class="img-fluid" src="images/Software-Dev-linkedin.PNG" alt="Software-Dev-linkedin" srcset="">
-                </div>
-                <div class="cert-box">
-                    <img class="img-fluid" src="images/ibm-iot-cert.PNG" alt="ibm-iot-cert" srcset="">
-                </div>
-                <div class="cert-box">
-                    <img class="img-fluid" src="images/BigData-Engineer.PNG" alt="BigData-Engineer" srcset="">
-                </div>
+                <figure class="cert-box">
+                    <img class="img-fluid" src="images/Software-Dev-linkedin.PNG" alt="Software Development Lifecycle LinkedIn Certificate">
+                </figure>
+                <figure class="cert-box">
+                    <img class="img-fluid" src="images/ibm-iot-cert.PNG" alt="IBM IoT Certificate">
+                </figure>
+                <figure class="cert-box">
+                    <img class="img-fluid" src="images/BigData-Engineer.PNG" alt="Big Data Engineer Certificate">
+                </figure>
             </div>
         </div>
-    </div>
-    <div class="about">
+    </section>
+    <section class="about" aria-labelledby="about-heading">
         <div class="container">
-            <h2 class="css-header">À propos</h2>
+            <h2 class="css-header" id="about-heading">À propos</h2>
             <div class="personal">
                 <div class="personal-img" class="img-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <img src="images/lanfouf.PNG" class="img-fluid" alt="lanfouf">
+                            <img src="images/lanfouf.PNG" class="img-fluid" alt="Photo of Issam L'ANFOUF">
                         </div>
                     </div>
                 </div>
@@ -245,14 +244,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
  
-    <div class="contact">
+    <section class="contact" aria-labelledby="contact-heading">
         <div class="container"  >
             <div class="head-contact-section">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <h2>Contactez-moi</h2>
+                        <h2 id="contact-heading">Contactez-moi</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -264,27 +263,27 @@
             <div class="contact-sections">
                 <div class="box-address">
                     <div class="over-hidden">
-                        <input type="text" id="myInput" readonly="readonly" value="issamlanfouf1@gmail.com" width="200">
+                        <input type="text" id="myInput" readonly="readonly" value="issamlanfouf1@gmail.com" width="200" aria-label="Email address">
                     </div>
                 </div>
-                <button  class="copied-email"  data-toggle="tooltip" data-placement="top" title="copier dans le presse-papier"><i class="far fa-copy fa-fw"></i></button>
+                <button class="copied-email" data-toggle="tooltip" data-placement="top" title="copier dans le presse-papier" aria-label="Copy email to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></button>
             </div>
             <div class="contact-links">
-                <a href="https://www.linkedin.com/in/issam-l-anfouf-1a1136186/"><i class="fab fa-linkedin-in  fa-fw"></i></a>
-                <a href="https://github.com/issamlf1/"><i class="fab fa-github  fa-fw"></i></a>
-                <a href="https://join.skype.com/invite/b9yNUDg8Urdv"><i class="fab fa-skype   fa-fw"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=+212623556116"><i class="fab fa-whatsapp  fa-fw"></i></a>
+                <a href="https://www.linkedin.com/in/issam-l-anfouf-1a1136186/" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in  fa-fw" aria-hidden="true"></i></a>
+                <a href="https://github.com/issamlf1/" aria-label="GitHub profile"><i class="fab fa-github  fa-fw" aria-hidden="true"></i></a>
+                <a href="https://join.skype.com/invite/b9yNUDg8Urdv" aria-label="Skype profile"><i class="fab fa-skype   fa-fw" aria-hidden="true"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+212623556116" aria-label="WhatsApp contact"><i class="fab fa-whatsapp  fa-fw" aria-hidden="true"></i></a>
 
             </div>
         </div>
-    </div>
-    <div class="copy-right">
+    </section>
+    <footer class="copy-right">
         <p>Copyright © Issam L'ANFOUF 2020</p>
-    </div>
+    </footer>
 
-    <div class="scroll-top">
-        <i class="fas fa-chevron-up fa-fw"></i>
-    </div>
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up fa-fw" aria-hidden="true"></i>
+    </button>
 
     
 
